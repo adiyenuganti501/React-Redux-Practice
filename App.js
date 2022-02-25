@@ -4,7 +4,7 @@ import store from "./Componensts/Redux/store";
 import Login from "./Componensts/Login/Login";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Welcome from "./Componensts/Welcome/Welcome";
-import CakeContainer from "./Componensts/CakeShop/CakeContaoner";
+import CakeContainer from "./Componensts/CakeShop/CakeContainer";
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import { BUY_CAKE } from "./CakeTypes";
-import { ADD_NEW_CAKE } from "./CakeTypes";
+import { ADD_NEW_CAKE, MULTIPLY } from "./CakeTypes";
 
 const initialState = {
   numOfCakes: 10,
@@ -17,7 +17,11 @@ const cakeReducer = (state = initialState, action) => {
         ...state,
         numOfCakes: state.numOfCakes + 1,
       };
-
+    case MULTIPLY:
+      return {
+        ...state,
+        numOfCakes: state.numOfCakes * 2,
+      };
     default:
       return state;
   }
